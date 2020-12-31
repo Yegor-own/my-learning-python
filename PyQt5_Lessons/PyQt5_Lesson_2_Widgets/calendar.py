@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import\
     QWidget, \
     QCalendarWidget, \
     QLabel, QApplication, \
-    QVBoxLayout,\
+    QVBoxLayout
 from PyQt5.QtCore import QDate
 import sys
 
@@ -29,6 +29,7 @@ class Example(QWidget):
 
     def showDate(self, date):
         self.lbl.setText(date.toString())
+
 
 def main():
     app = QApplication(sys.argv)

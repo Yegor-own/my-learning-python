@@ -19,7 +19,7 @@ class Example(QMainWindow):
 
     def initUI(self):
         # define top menu
-        exitAct = QAction(QIcon('exit.svg'), '&Exit', self)
+        exitAct = QAction(QIcon('img/exit.svg'), '&Exit', self)
         exitAct.setShortcut('Ctrl+q')
         exitAct.setStatusTip('Exit application')
         exitAct.triggered.connect(qApp.quit)
@@ -47,7 +47,7 @@ class Example(QMainWindow):
         # define window title
         self.setWindowTitle('Tooltip')
         # define window icon
-        self.setWindowIcon(QIcon('robot.png'))
+        self.setWindowIcon(QIcon('img/robot.png'))
         self.show()
 
     # set window in centre of the screen

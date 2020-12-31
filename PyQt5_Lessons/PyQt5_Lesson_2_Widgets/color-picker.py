@@ -56,6 +56,7 @@ class Example(QWidget):
             self.col.setBlue(val)
         self.square.setStyleSheet("QWidget {background-color: %s}" % self.col.name())
 
+
 def main():
     app = QApplication(sys.argv)
     ex = Example()
