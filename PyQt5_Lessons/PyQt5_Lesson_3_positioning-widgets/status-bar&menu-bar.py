@@ -15,7 +15,7 @@ class Example(QMainWindow):
         # define menu bar
         menubar = self.menuBar()
         view_menu = menubar.addMenu('View')
-        view_stat_act = QAction('View statusbar', self, checkable=True)
+        view_stat_act = QAction('View status', self, checkable=True)
         view_stat_act.setChecked(True)
         view_stat_act.triggered.connect(self.toggleMenu)
         view_menu.addAction(view_stat_act)
